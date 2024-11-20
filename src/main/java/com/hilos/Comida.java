@@ -22,7 +22,7 @@ public class Comida {
     }
 
     public void paint(Graphics g) {
-        g.setColor(Color.RED);
+        g.setColor(Color.PINK);
         g.fillOval(x, y, Vivora.NODO_TAMANO, Vivora.NODO_TAMANO); 
     }
 

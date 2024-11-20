@@ -28,7 +28,7 @@ public class Juego extends JPanel {
                 super.paintComponent(g);
 
                 for (Vivora v : vivoras) {
-                    g.setColor(v == vivoraActiva ? Color.GREEN : Color.BLUE);
+                    g.setColor(v == vivoraActiva ? Color.BLACK : Color.blue);
                     Nodo actual = v.cabeza;
                     while (actual != null) {
                         g.fillOval(actual.x, actual.y, Vivora.NODO_TAMANO, Vivora.NODO_TAMANO);
@@ -165,7 +165,7 @@ public class Juego extends JPanel {
             JButton botonVivora = new JButton("Víbora " + (i + 1));
             
             if (vivora == vivoraActiva) {
-                botonVivora.setBackground(Color.GREEN);
+                botonVivora.setBackground(Color.lightGray);
             }
             
             final int index = i;

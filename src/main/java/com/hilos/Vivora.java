@@ -118,9 +118,9 @@ class Vivora implements Runnable {
 
     public boolean colisionaConBorde(int width, int height) {
         return cabeza.x < 0 || 
-               cabeza.x + NODO_TAMANO > width || 
+               cabeza.x > width || 
                cabeza.y < 0 || 
-               cabeza.y + NODO_TAMANO > height;
+               cabeza.y > height;
     }
 
     public boolean colisionaConCuerpo() {
